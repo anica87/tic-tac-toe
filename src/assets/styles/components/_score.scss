@@ -1,0 +1,10 @@
+.#{$namespace}-score {
+  display: table-cell;
+
+  &--winner {
+    &::after {
+      content: 'Winner! :)';
+      color: white;
+
+  }}
+}

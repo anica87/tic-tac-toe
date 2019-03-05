@@ -1,0 +1,30 @@
+.#{$namespace}-game {
+    position: relative;
+
+    display: flex;
+    margin: 0 auto;
+
+    height: var(--board-size);
+    width: var(--board-size);
+  &--over {
+    .#{$namespace}-board {
+      opacity: .05;
+      transition: opacity 1s linear;
+    }
+  }
+
+  &__message{
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 35%;
+    margin-right: -50%;
+    color:white;
+    transform: translate(-50%, -50%);
+    justify-content: center;
+    text-transform: uppercase;
+    pointer-events: none;
+    z-index: 10;
+    animation: pulsate 2s infinite ease-in-out;
+  }
+}

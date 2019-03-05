@@ -1,0 +1,7 @@
+:root {
+  --header-height: 4rem;
+  --footer-height: 2rem;
+
+  --without-header-footer: var(--header-height) - var(--footer-height);
+  --board-size: calc(100vmin - var(--without-header-footer));
+}

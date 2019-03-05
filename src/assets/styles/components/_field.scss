@@ -1,0 +1,30 @@
+.#{$namespace}-field {
+    width: 33%;
+    height: 33%;
+    float: left;
+
+    transform: scale(.95, .95);
+    transition: background 0.2s ease;
+    background: #333;
+
+  &:hover {
+    animation: pulsate infinite .8s ease-in-out;
+  }
+
+  &__sign {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+
+  @keyframes pulsate {
+    0%, 100% {
+      transform: scale(.95, .95);
+    } 50% {
+        transform: scale(.9, .9);
+      }
+  }
+
+}
